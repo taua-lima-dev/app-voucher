@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  margin: 5px;
+  padding: 0;
+}
+
+main {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container {
+  width: 580px;
+  background-color: var(--containerBg);
+  padding: 5px 30px 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.divTheme {
+  width: 30px;
+  height: 30px;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+}
+
+.bttTheme {
+  background-color: var(--switchTheme);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+  color: var(--title);
+  margin: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--label);
+}
+
+form input,
+form select {
+  background-color: var(--inputBg);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--inputBorder);
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+input::placeholder {
+  color: var(--placeholder);
+}
+
+form input:focus,
+form select:focus {
+  border-color: var(--inputFocus);
+  outline: none;
+}
+
+.divBtt {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  gap: 5%;
+}
+
+.btt {
+  width: 30%;
+  font-size: 16px;
+  background-color: var(--btt);
+  color: var(--bttText);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding: 10px;
+  transition: background-color 0.1s, transform 0.4s;
+}
+
+.btt:hover {
+  background-color: var(--bttHover);
+}
+
+.btt:active {
+  background-color: var(--click);
+}
+
+.date {
+  display: flex;
+  gap: 7%;
+  justify-content: space-evenly;
+}
+
+.result {
+  width: 740px;
+  background-color: var(--resultBg);
+  color: var(--textResult);
+  padding-top: 5px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  opacity: 35%;
+  margin-top: 30%;
+}
+
+.btts {
+  margin: 10px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.text {
+  margin: 20px 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.divCheckin,
+.divCheckout {
+  width: 30%;
+}

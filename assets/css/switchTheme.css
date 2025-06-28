@@ -1,0 +1,33 @@
+:root {
+  --bg: #f5f7fa;
+  --containerBg: #fff;
+  --title: #333;
+  --label: #161616;
+  --inputBg: #fff;
+  --placeholder: #d1d1d1;
+  --inputBorder: #ccc;
+  --inputFocus: #1976d2;
+  --btt: #1f8afc;
+  --bttHover: #0e62bb;
+  --bttText: #fff;
+  --textResult: #161616;
+  --resultBg: #f7f7f7;
+  --switchTheme: #121212;
+  --click: #02f840;
+}
+
+.dark {
+  --bg: #121212;
+  --containerBg: #2c2c2c;
+  --title: #fff;
+  --label: #fff;
+  --inputBg: #afafaf;
+  --placeholder: #818181;
+  --inputBorder: #000000;
+  --inputFocus: #1976d2;
+  --btt: #000000;
+  --bttText: #fff;
+  --textResult: #fff;
+  --resultBg: #222222;
+  --switchTheme: #fff;
+}
