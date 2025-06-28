@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerador de Texto Personalizado</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/switchTheme.css" />
+  </head>
+  <body id="body">
+    <main>
+      <div class="container">
+        <h3>Gerador de Voucher - Reservas</h3>
+
+        <form id="form">
+          <label for="seller">Nome do agente da reserva (vendedor):</label>
+          <input
+            type="text"
+            id="seller"
+            name="seller"
+            placeholder="Digite o nome do agente da reserva"
+          />
+
+          <label for="name">Nome do titular:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite o nome do titular da reserva"
+          />
+
+          <label for="booking">Número da reserva:</label>
+          <input
+            type="number"
+            id="booking"
+            name="booking"
+            placeholder="Digite o número da reserva"
+          />
+
+          <label for="guests">Número de pessoas:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="Digite a quantidade de pessoas"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite o email"
+          />
+
+          <label for="tel">Telefone - Whatsapp:</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Digite o número whatsapp"
+          />
+
+          <label for="total">Valor total do pacote:</label>
+          <input
+            type="number"
+            id="total"
+            name="total"
+            placeholder="Digite o valor total do pacote"
+          />
+
+          <label for="advance">Valor da Antecipação:</label>
+          <input
+            type="number"
+            id="advance"
+            name="advance"
+            placeholder="Digite o valor da antecipação"
+          />
+
+          <label for="pending">Saldo pendente:</label>
+          <input
+            type="number"
+            id="pending"
+            name="pending"
+            placeholder="Digite o saldo a ser pago no check-in"
+          />
+
+          <div class="date">
+            <div class="divCheckin">
+              <label for="checkin">Check-in:</label>
+              <input type="date" id="checkin" name="checkin" class="checkin" />
+            </div>
+            <div class="divCheckout">
+              <label for="checkout">Check-out:</label>
+              <input type="date" id="checkout" name="checkout" />
+            </div>
+            <div class="select">
+              <label for="options">Acomodação:</label>
+              <select id="select" name="select">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Frente mar luxo">Frente mar luxo</option>
+                <option value="Lateral mar - 1 quarto">Lateral mar - 1 quarto</option>
+                <option value="Lateral mar - 2 quartos">Lateral mar - 2 quartos</option>
+                <option value="Suíte lateral mar">Suíte lateral mar</option>
+              </select>
+            </div>
+          </div>
+          <div class="divBtt">
+            <button id="bttGenerate" type="submit" class="btt">Gerar ⚙️</button>
+            <button id="bttErase" type="submit" class="btt">Apagar ❌</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="result">
+        <div id="text" class="text">
+          <img src="./assets/img/logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="btts">
+          <button id="bttCopy" type="submit" class="btt">Copiar ✔️</button>
+          <button id="bttWhats" type="submit" class="btt">Whats 📱</button>
+          <!-- <button id="bttEmail" type="submit" class="btt">E-mail 📧</button> -->
+          <!-- <button type="submit" class="btt">Salvar 💾</button> -->
+          <!-- <button id="bttPrintSave" type="submit" class="btt">Imprimir 🖨️</button> -->
+        </div>
+      </div>
+
+      <div class="divTheme">
+        <button id="switchTheme" class="bttTheme">
+          <span id="moon"><img src="./assets/img/moon.svg" alt="moon" class="img"></span>
+          <span id="sun" class="hidden"><img src="./assets/img/sun.svg" alt="sun" class="img"></span>
+        </button>
+      </div>
+    </main>
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
