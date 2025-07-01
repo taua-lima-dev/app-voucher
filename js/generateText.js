@@ -21,8 +21,8 @@ function generateText() {
     
 
     
-    if (!name) {
-        alert("Por favor, preencha todos os campos antes de gerar o texto."); //|| !booking || !guests || !total || !advance || !pending || !checkin || !checkout || !seller || !select
+    if (!name || !booking || !guests || !total || !advance || !pending || !checkin || !checkout || !seller || !select) {
+        alert("Por favor, preencha todos os campos antes de gerar o texto.");
         return;
     }
 
