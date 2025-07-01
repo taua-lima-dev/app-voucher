@@ -25,8 +25,6 @@ function generateText() {
         alert("Por favor, preencha todos os campos antes de gerar o texto.");
         return;
     }
-
-    // Texto padrão com placeholders
     const textResult =
 
         `VOUCHER DE CONFIRMAÇÃO RESERVA Nº ${booking}
@@ -61,8 +59,6 @@ function generateText() {
         Desde já desejamos uma boa viagem!
         Atenciosamente, ${seller}.
         `;
-
-    // Exibir o texto gerado
     document.getElementById('text').innerText = textResult;
 }
 
